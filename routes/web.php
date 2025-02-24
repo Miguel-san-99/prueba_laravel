@@ -13,3 +13,13 @@ Route::get('/inicio', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
+
+Route::post('/crear-contacto', function (Request $request) {
+    dd($request->all());
+    //validar formulario
+
+    //Guardar en BD
+
+    //Redirigir
+
+})

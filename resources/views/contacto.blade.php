@@ -11,7 +11,8 @@
     <div class="container">
         <div class="row">
             <h1>Contacto</h1>
-            <form method="get">
+            <form action="/crear-contacto" method="POST">
+                @csrf
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo electronico</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
